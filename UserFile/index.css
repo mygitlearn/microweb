@@ -1,0 +1,329 @@
+html,body{
+	margin:0px;
+	padding: 0px;
+	color:#444;
+	height: 100%;
+	width: 100%;
+	/*font-size: 16px;*/
+}
+body{
+	overflow-x:hidden ;
+	-webkit-transition:font-size 0.2s ease-out;
+}
+@media only screen and (max-width: 2000px) { html,body{ font-size: 28px; }}
+@media only screen and (max-width: 1400px) { html,body{ font-size: 26px; }}
+@media only screen and (max-width: 1200px) { html,body{ font-size: 26px; }}
+@media only screen and (max-width: 1100px) { html,body{ font-size: 24px; }}
+@media only screen and (max-width: 1000px) { html,body{ font-size: 24px; }}
+@media only screen and (max-width: 900px) { html,body{ font-size: 22px; }}
+@media only screen and (max-width: 800px) { html,body{ font-size: 22px; }}
+@media only screen and (max-width: 700px) { html,body{ font-size: 20px; }}
+@media only screen and (max-width: 600px) { html,body{ font-size: 20px; }}
+@media only screen and (max-width: 500px) { html,body{ font-size: 18px; }}
+@media only screen and (max-width: 400px) { html,body{ font-size: 18px; }}
+@media only screen and (max-width: 300px) { html,body{ font-size: 16px; }}
+/*.web{
+	width: 100%;
+	height: 100%;
+	overflow-x:hidden;
+}*/
+body::-webkit-scrollbar{
+	width: 5px;
+}
+body::-webkit-scrollbar-button{
+	display: none;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+
+.side{
+	position: fixed;
+	z-index: 0;
+	/*float: left;*/
+	background: #21232F;
+	min-height: 100%;
+	width: 65%;
+	top: 0;
+	left:0px;
+}
+
+.nav-bar{
+	margin-top: 3rem;
+	position: absolute;
+}
+
+.nav-item{
+	height: 2rem;
+	line-height: 30px;
+	font-size: 0;
+	/*padding: 5px 0px 5px 30px;*/
+	font-family: 'Microsoft Yahei';
+	/*text-align: center;*/
+	color:#fff;
+	cursor: pointer;
+	border-bottom: 1px solid #3E404C
+}
+.nav-item:last-child{
+	border-bottom:none
+}
+.nav-item.active{
+	border-left: 5px solid  #ff5352;
+}
+.nav-icon{
+	display: inline-block;
+	font-size: 14px;
+	margin:0px 14px ;
+	line-height: 30px;
+	background-size:80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.nav-icon-1{
+	background-image: url(../Public/Controller/material/public/index.png)
+}
+.nav-icon-2{
+	background-image: url(../Public/Controller/material/public/letter.png)
+}
+.nav-icon-3{
+	background-image: url(../Public/Controller/material/public/us.png)
+}
+.nav-icon-4{
+	background-image: url(../Public/Controller/material/public/phone.png)
+}
+.nav-icon-5{
+	background-image: url(../Public/Controller/material/public/help.png)
+}
+
+.nav-item a{
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 30px;
+}
+.nav-move{
+		font-family: 'Glyphicons Halflings';
+		display: none;
+		position: absolute;
+		top: 0;
+		background: rgba(0,0,0,0.5);
+		height: 100%;
+    	line-height: 4rem;
+    	color: #888;
+    	cursor: pointer;
+    	z-index: 1
+	}
+	.nav-move-right{
+		right:0;
+	}
+	.nav-move-left{
+		left:0;
+	}
+	.nav-move-right:before{
+		content: '\e080';
+	}
+	.nav-move-left:before{
+		content: '\e079';
+	}
+
+.main,.menu-button{
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-ms-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+/*.nav-item::after{
+	content: "\00BB";
+	float: right;
+	margin-right: 20px;
+	vertical-align: middle;
+}*/
+.moveRight{
+	-webkit-transform: translate3d(65%,0,0);
+	-moz-transform: translate3d(65%,0,0);
+	-ms-transform: translate3d(65%,0,0);
+	-o-transform: translate3d(65%,0,0);
+	transform: translate3d(65%,0,0);
+}
+.moveLeft{
+	/*transition: all 350ms;*/
+	/*transform: translate3d(0,0,0);*/
+}
+/*.main{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}*/
+
+.header{
+	
+}
+.clearfix{
+	height:2.5rem;
+	position: relative;
+}
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left:0px;
+	/*height: 10%;*/
+	line-height: 2.5rem;
+	height:2.5rem;
+	font-size: 1.4rem;
+	z-index: 100;
+	/*position: relative;*/
+	background: -webkit-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: -moz-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: -ms-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: -o-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: linear-gradient(bottom left,#ff692c,#ff5352);
+	color:#fff;
+}
+	.header h1{
+		position: absolute;
+		top: 0px;
+		left:0px;
+		margin:0px;
+		width: 100%;
+		font-family: "Microsoft Yahei";
+		font-size: inherit;
+		line-height: inherit;
+		text-align: center;
+	}
+	.header .menu-button{
+		position: absolute;
+		top: 0px;
+		left:2%;
+		/*font-size: 28px;
+		line-height: 48px;*/
+		text-align: center;
+		line-height: inherit;
+		/*width: 48px;*/
+		height: 100%;
+		z-index: 2;
+		cursor: pointer;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:85%;
+	}
+
+.center{
+	/*margin: 10% 0px 1%;*/
+	min-height: 100px;
+	/*margin-top: 10%;*/
+	clear: both;
+	background-color:transparent;
+	position: relative;
+	background-color: #fff
+}
+.background{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -2px;
+}
+.top-bar{
+	position: fixed;
+	width: 2rem;
+	height: 1.5rem;
+	bottom: 3rem;
+	right: 1rem;
+	z-index: 15;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.top-bar.zi{
+	background-image: url(../Public/Controller/material/public/top-zi.png);
+}
+.top-bar.tu{
+	background-image: url(../Public/Controller/material/public/top-tu.png);
+}
+
+.footer{
+	text-align: center;
+	height: 4rem;
+	/*background: #fff;*/
+	position: relative;
+	margin-top: 1rem;
+}
+	/*.footer>.top{
+		height: 1.2rem;
+	}*/
+	.top-button{
+		height: 100%;
+		font-weight:bold;
+		float: right;
+		margin-right:10px; 
+		line-height: 30px;
+		cursor:pointer;
+	}
+	.top-button::after{
+		content:"\25B2";
+		margin-left: 3%
+	}
+	.footer p {
+		margin: 0px;
+		padding:0px;
+		font-size: 0.6rem;
+		line-height: 1.2rem;
+	}
+
+
+
+
+
+/*拖放的显示*/
+.pro{
+	display: none;
+	box-sizing:border-box;
+	width: 100%;
+	height: 100px;
+	border:dashed 3px green;
+}
+.operation{
+	box-sizing:border-box;
+	position:absolute;
+	z-index: 10;
+	border: dashed 2px #389AFF;
+}
+.oparetion-nav-bar{
+	box-sizing:border-box;
+	float: right;
+	margin-top: -25px;
+	font-size: 12px;
+	color: #fff;
+	background: #389AFF;
+	border: 1px #3178C0 solid;
+	border-left: none;
+	border-bottom: none;
+}
+.oparetion-item{
+	box-sizing:border-box;
+	float: right;
+	height: 25px;
+	line-height: 25px;
+	text-align:center;
+	padding:0px 5px;
+	border-left: 1px #3178C0 solid;
+	cursor: pointer;
+}
+.jjj{
+	width: 100%;
+	height: 10rem;
+	border:1px solid #456;
+}

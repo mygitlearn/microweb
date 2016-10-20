@@ -1,0 +1,101 @@
+.side{
+	background: #21232F;
+}
+	.nav-item{
+		height: 2rem;
+		line-height: 2rem;
+		padding-left: 2rem;
+		font-family: 'Microsoft Yahei';
+		color:#fff;
+		cursor: pointer;
+		border-bottom: 1px solid #3E404C
+	}
+	.nav-item:last-child{
+		border-bottom:none
+	}
+	.nav-item.active{
+		/*border-left: 5px solid  #ff5352;*/
+	}
+	.nav-icon{
+		display: inline-block;
+		/*font-size: 14px;*/
+		margin:0px 1rem ;
+		line-height: inherit;
+	}
+	.nav-item a{
+		display: inline-block;
+		/*font-size: 16px;*/
+		color: #fff;
+		text-decoration: none;
+		line-height: inherit;
+	}
+	.nav-item::after{
+		content: "\00BB";
+		float: right;
+		margin-right: 1.5rem;
+		vertical-align: middle;
+	}
+
+
+.header,.footer>.top{
+	background: -webkit-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: -moz-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: -ms-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: -o-linear-gradient(bottom left,#ff692c,#ff5352);
+	background: linear-gradient(bottom left,#ff692c,#ff5352);
+	color:#fff;
+}
+.header{
+	line-height: 160%;
+	height:2.5rem;
+	font-size: 1.4rem;
+}
+	.header h1{
+		font-family: "Microsoft Yahei";
+		font-size: inherit;
+		line-height: inherit;
+		text-align: center;
+	}
+	.header .menu-button{
+		position: absolute;
+		top: 0px;
+		left:2%;
+		text-align: center;
+		line-height: inherit;
+		height: 100%;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+.center{
+	background: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+
+}
+	.footer>.top{
+		height: 1.2rem;
+	}
+	.top-button{
+		height: 100%;
+		font-weight:bold;
+		float: right;
+		margin-right:10px; 
+		line-height: 30px;
+		cursor:pointer;
+	}
+	.top-button::after{
+		content:"\25B2";
+		margin-left: 3%
+	}
